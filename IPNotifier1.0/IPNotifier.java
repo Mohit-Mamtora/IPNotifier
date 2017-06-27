@@ -9,7 +9,7 @@ public class IPNotifier implements Runnable{
 	private OnIpchangeListioner OnIpchangeListioner;
 	private InetAddress inetAddress;
 	private volatile boolean SHUTDOWN;
-	private int RefreshRate=3000;
+	private int RefreshRate=5000;
 	
 	public IPNotifier(InetAddress inetAddress) {
 		if (inetAddress==null) {
